@@ -1,0 +1,23 @@
+console.log("======= step 1 : swap the name =======");
+var name1="Sweety";
+var name2="Cutie";
+console.log("======== Before Swaping the names ========");
+console.log("name1=",name1,"name2=",name2);
+var temp=name1;
+name1=name2;
+name2=temp;
+console.log("======== After Swaping the Names ========");
+console.log("name1=",name1,"name2=",name2);
+console.log("========= step 2 : swap the three number ========");
+var num1=100;
+var num2=200;
+var num3=300;
+console.log("====== Before Swaping The Numbers ========");
+console.log("num1=",num1,"num2=",num2,"num3=",num3);
+console.log("======= After Swaping The Numbers ========");
+var temp1=num1;
+num1=num2;
+num2=num3;
+num3=temp1;
+console.log("num1=",num1,"num2=",num2,"num3=",num3);
+
