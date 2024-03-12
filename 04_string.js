@@ -23,3 +23,32 @@ var firstName = "Gajanan";
 var lastName= " Kharat";
 var resultConcat = firstName.concat(lastName);
 console.log("Concat result is:", resultConcat);
+
+console.log("========== replace() ==================");
+var greet = "Good Morning";
+const afterReplace = greet.replace("Morning", "Afternoon");
+console.log(`After replace string is: ${afterReplace}`);
+
+console.log(`========== toUpperCase() ==================`);
+var greet = "Good Morning";
+var greetInUpperCase = greet.toUpperCase();
+console.log(`${greet} in upper case is : ${greetInUpperCase}`);
+
+
+console.log(`========== trim() ==================`);
+var result="   to trim the space    ";
+console.log(`before usimg the trim() method the sentence is : ${result}`);
+var len = result.length;
+console.log(`before using trim the length of sentence: ${len}`);
+var trimResult=result.trim();
+var leng = trimResult.length;
+console.log(`After using trim the length of sentence: ${trimResult}`);
+console.log(`After using trim the length of sentence: ${leng}`);
+
+console.log(`========== includes() ==================`);
+var result="My name is Pratiksha";
+console.log(result.includes("name"));
+
+console.log("============ slice() =================");
+var str = "My name is Pratiksha";
+console.log(str.slice(0,12));
