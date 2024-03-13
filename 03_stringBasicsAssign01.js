@@ -17,3 +17,4 @@ var hobby2=`Cooking`;
 var hobby3=`Yoga`;
 var len = hobby1.length+hobby2.length+hobby3.length;
 console.log(`The Sum the Total number of characters is: ${len} `);
+
