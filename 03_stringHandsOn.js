@@ -2,7 +2,7 @@ function stringHandsOn() {
     console.log(`======= step 1: given string as it on console ===============`);
     console.log(`Given string:"   Hey you are doing good, keep it up   "`);
     var sentence ="   Hey you are doing good, keep it up   ";
-    resultLen = sentence.length;
+    var resultLen = sentence.length;
     console.log(`========== step 2: the length of the string =============`);
     console.log(`Length of the string is: ${resultLen}`); 
     console.log(`============== step 3: the length of the string without spaces ===========`);
