@@ -1,18 +1,28 @@
 console.log(`=========== step 1: length of the word and square of the length of word =============`);
-function squareOfWordLength(oneArgu,secondArgu,thirdArgu) {
-    console.log(`the length of the word "javascript" is: ${oneArgu.length}`);
-    var square1 = oneArgu.length**2;
-    console.log(`the square of the length of word "javascript" is: ${square1}`);
-    console.log(`--------------------------------------------------------------------`);
-    console.log(`the length of the word "Google chrome" is: ${secondArgu.length}`);
-    var square2 = secondArgu.length**2;
-    console.log(`the square of the length of word "Google Chrome" is: ${square2}`);
-    console.log(`---------------------------------------------------------------------`);
-    console.log(`the length of the word "Developer Smart" is: ${thirdArgu.length}`);
-    var square3 = thirdArgu.length**2;
-    console.log(`the square of the length of word "Developer Smart" is: ${square3}`);
+function squareOfWordLength(oneArgu) {
+    var wordLen = oneArgu.length;
+    var square = wordLen**2;
+    console.log(`the length of the word ${oneArgu} is:${wordLen}`); 
+    console.log(`the square of length of word ${oneArgu} is:${square}`);
+    return squareOfWordLength;
 }
-squareOfWordLength("javascript","Google Chrome","Developer Smart");
+squareOfWordLength("javascript");
+squareOfWordLength("Google Chrome");
+squareOfWordLength("Developer smart");
+// function squareOfWordLength(oneArgu,secondArgu,thirdArgu) {
+//     console.log(`the length of the word "javascript" is: ${oneArgu.length}`);
+//     var square1 = oneArgu.length**2;
+//     console.log(`the square of the length of word "javascript" is: ${square1}`);
+//     console.log(`--------------------------------------------------------------------`);
+//     console.log(`the length of the word "Google chrome" is: ${secondArgu.length}`);
+//     var square2 = secondArgu.length**2;
+//     console.log(`the square of the length of word "Google Chrome" is: ${square2}`);
+//     console.log(`---------------------------------------------------------------------`);
+//     console.log(`the length of the word "Developer Smart" is: ${thirdArgu.length}`);
+//     var square3 = thirdArgu.length**2;
+//     console.log(`the square of the length of word "Developer Smart" is: ${square3}`);
+// }
+// squareOfWordLength("javascript","Google Chrome","Developer Smart");
 
 console.log(`============= step 2: Find string length and divide by total number of words ===============`);
 function opretorOnString() {
