@@ -1,0 +1,40 @@
+const bankSbi = {
+    bankName: "SBI Bank",
+    bankBranch:"Main Branch",
+    IFSCCode:123456789101,
+    address:"Swargate near bus stop, PUNE",
+    pin:423344,
+    }
+    const bankLocation={
+        street:"Pune Satara Highway",
+        city:"Pune",
+        pin:423344,
+    }
+    const rateOfInterest={
+        homeLoanInterest:"9.5%",
+        personalLoanInterest:"10.55%",
+        dueInterest:"9%",
+    }
+
+console.log(`================ step 1: create the object bankSbi ================`);
+console.log(bankSbi);
+console.log(`================ step 2: create the object bankLocation ============`);
+console.log(bankLocation);
+console.log(`================ step 3: clone the object using object assign ============`);
+const cloneObjetBankSbi=Object.assign({},bankSbi);
+console.log(cloneObjetBankSbi);
+console.log(`================ step 4: clone the object using object assign ============`);
+const cloneObjetBankLocation=Object.assign({},bankLocation);
+console.log(cloneObjetBankLocation);
+console.log(`=============== step 5: merge the object ====================`);
+const sbiDetails = Object.assign({},bankSbi,bankLocation,rateOfInterest);
+console.table(sbiDetails);
+console.log(`================ step 6: traverse the merged object ========================`);
+for (const index  in sbiDetails) {
+    if (Object.hasOwnProperty.call(sbiDetails, index)) {
+        const element = sbiDetails[index];
+        console.log(`${index} = ${element}`);   
+    }
+    
+}
+//console.log(sbiDetails);
