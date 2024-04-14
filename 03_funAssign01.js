@@ -15,6 +15,7 @@ function details() {
     console.log("Full Name is:",fullName);
     console.log("Bank Account No:",bankAccountNo);
 }
+
 var result = details();
 
 console.log("======== function with arguments =========");
