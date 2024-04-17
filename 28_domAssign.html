@@ -7,6 +7,9 @@
 </head>
 <body>
     <main>
+        <div class="project">
+        
+        </div>
         <div id="overview">
             <h1>HTML and JavaScript are crucial Technologies</h1>
             <p>The web would not work without them...</p>
@@ -18,6 +21,7 @@
                 <li>Magical</li>
             </ul>
         </div>
+
     </main>
     <script>
         console.log(` mainheading should store the h1 element `);
@@ -32,6 +36,15 @@
         const advDiv=document.querySelector("#advantages");
         console.log(advDiv);
         console.log(advDiv.innerHTML);
+
+        console.log('Creating an element');
+        const h2Element = document.createElement("h2");
+        const textNodeProject = document.createTextNode("Project Name: College Management System");
+        h2Element.appendChild(textNodeProject);
+        h2Element.style.color="green";
+
+        const projectNodeDiv = document.querySelector('.project');
+        projectNodeDiv.appendChild(h2Element);
     </script>
 </body>
 </html>
